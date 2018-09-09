@@ -2,40 +2,105 @@ Please answer the below core-java Questions:
 
 What is programing language?
 A. a way to command the computer to create and run programs via source code.
+
 What jdk contains or composed of and define each components?
 A. Java Develpoment Kit composed of libraries and other files JVM uses at runtime.
+
 What is IDE?
 A. Integrated Development Environment is a software application which enables users to more easily write and debug Java programs
 with a code editor, a compiler or interpreter and a debugger all under one GUI.
+
 What are the IDEs available in the market to support java?
+A. Eclipse, NetBeans, IntelliJ IDEA, Visual studio, PyCharm, Atom, Xcode, JDeveloper, and BlueJ
+
 Explain the entire java life cycle.
+A. code/text editor -> code is written in editor and is now source code -> compiler -> .class bytecode file <-> Java Libraries ->
+(class loader -> bytecode verifier -> interpreter)- JVM which is hosted on the OS
+
 what is class?
+A. A class definition defines instance and class variables and methods, 
+as well as specifying the interfaces the class implements and the immediate superclass of the class.
+
 What is object?
+A. The principal building blocks of object-oriented programs. 
+Each object is a programming unit consisting of data ( instance variables ) and functionality ( instance methods ). 
+
 What is the entry point of an application?
+A. the main method
+
 Why main is static?
+A. This is neccesary because main() is called by the JVM before any objects are made.
+Since it is static it can be directly invoked via the class.
+
 Which class is the superclass of all classes?
+A.
+
 What is difference between path and classpath variables?
+A.
+
 What is the difference between an Interface and Abstract class?
+A.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A.
+
 what is Access Specifier?
+A.
+
 What is OOP ? Define each feature of java OOP.
+A.
+
 What is Java Package and which package is imported by default?
+A.
+
 What is API? Name list of API that you have used so far.
+A.
+
 Does java support multiple inheritance, explain why or why not?
+A.
+
 What is method overloading and when it happens?
+A.
+
 Explain exceptions in java and how to handle it.
+A.
+
 What is static keyword in java? How it has been used in variables and methods ?
+A.
+
 What is final and how it has been used variables and methods?
+A.
+
 What is final, finally and finalize?
+A.
+
 What is a constructor ?
+A.
+
 Can we have multiple constructors in a class?
+A.
+
 If we don't have a constructor declared, what is called during the object creation?
+A.
+
 What is "this" keyword in java ?
+A.
+
 What is "super" keyword in java? How many possible way can you use?
+A.
+
 What is JVM stand for ?
+A.
+
 Is JVM platform independent?
+A.
+
 What version of java are you using?
+A.
+
 What is JAR stand for ?
+A.
+
 What is the difference between JDK and JVM?
 What is the difference between JVM and JRE?
 What is compile time and run time?
