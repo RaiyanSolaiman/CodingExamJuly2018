@@ -87,7 +87,13 @@ A. An exception (or exceptional event) is a problem that arises during the execu
 try-with-resource approach to handle exceptions.
 
 What is static keyword in java? How it has been used in variables and methods ?
-A.
+A. static is a non-access modifier in Java which is applicable for the following:
+blocks
+variables
+methods
+nested classes
+When a variable is declared as static, then a single copy of variable is created and shared among all objects at class level.
+Static variables are, essentially, global variables. 
 
 What is final and how it has been used variables and methods?
 A. used in different contexts. First of all, final is a non-access modifier applicable only to a variable, a method or a class.
@@ -114,7 +120,9 @@ A. Keyword THIS is a reference variable in Java that refers to the current objec
 variable of current class. It can be used to invoke or initiate current class constructor.
 
 What is "super" keyword in java? How many possible way can you use?
-A. 
+A. Super is a keyword used in java to refer the super class or base class.
+It is used inside a sub-class method definition to call a method defined in the super class.
+Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword. 
 
 What is JVM stand for ?
 A. java virtual machine
@@ -130,10 +138,18 @@ A. A JAR (Java ARchive) is a package file format typically used to aggregate man
 and associated metadata and resources (text, images, etc.) into one file for distribution.
 
 What is the difference between JDK and JVM?
-A.
+A. The JDK is a superset of the JRE, and contains everything that is in the JRE, 
+plus tools such as the compilers and debuggers necessary for developing applets and applications.
+The Java Virtual machine (JVM) is the virtual machine that runs the Java bytecodes. The JVM doesn't understand Java source code,
+that's why you compile your *.java files to obtain *.class files that contain the bytecodes understood by the JVM.
 
 What is the difference between JVM and JRE?
-A.
+A. The Java Virtual machine (JVM) is the virtual machine that runs the Java bytecodes. The JVM doesn't understand Java source code,
+that's why you compile your *.java files to obtain *.class files that contain the bytecodes understood by the JVM.
+The Java Runtime Environment (JRE) provides the libraries, the Java Virtual Machine, 
+and other components to run applets and applications written in the Java programming language. Also has 2 key technologies:
+Java Plug-in, which enables applets to run in popular browsers; and 
+Java Web Start, which deploys standalone applications over a network.
 
 What is compile time and run time?
 A. The source code must be compiled into machine code in order to become and executable program. 
@@ -141,81 +157,100 @@ This compilation process is referred to as compile time. A compiled program can 
 The amount of time the program is run is called runtime.
 
 What is heap?
-A.
+A. The heap is the runtime data area from which memory for all class instances and arrays is allocated.
 
 How java manage it's memory?
-A.
+A. Java Memory Management, with its built-in garbage collection, allows developers to create new objects without worrying 
+explicitly about memory allocation 
+and deallocation, because the garbage collector automatically reclaims memory for reuse.
 
 What is the difference between String, StringBuffer and StringBuilder?
-A.
+A. String is immutable, if you try to alter their values, another object gets created, whereas StringBuffer
+and StringBuilder are mutable so they can change their values. 
 
 What is Singleton class?
-A.
+A. a singleton class is a class that can have only one object (an instance of the class) at a time
 
 What is Serialization and Deserialization?
-A.
+A. Serialization is a mechanism of converting the state of an object into a byte stream. 
+Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.
+This mechanism is used to persist the object.
 
 when to use transient variable in java?
-A.
+A.  You use the transient keyword to indicate to the Java virtual machine
+that the indicated variable is not part of the persistent state of the object.
 
 Difference between while and do..while loop?
-A.
+A. in while loops, the test expression is checked at first
+in do...while loops, code is executed at first then the condition is checked
 
 What is Enum?
-A.
+A. special type of java class used to define collections of constants; can contain constants, methods, etc.
+
 What is Iterator?
-A.
+A. Iterator takes the place of Enumeration in the Java collections framework. Iterators differ from Enumerations in two ways: 
+Iterators allow the caller to remove elements from the underlying collection during the iteration with well-defined semantics.
 
 Which one will take more memory, an int or Integer?
-A.
+A. int = 4 bytes
+integer = 16 bytes
+integer takes more memory
 
 Why is String Immutable in Java?
-A.
+A. The string is Immutable in Java because String objects are cached in String pool.
 
 What is constructor chaining in Java?
-A.
+A. Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
 
 The difference between Serial and Parallel Garbage Collector?
-A.
+A. Serial collector: designed for single-threaded environments, freezes all application threads whenever it’s working.
+parallell collector: can use multiple threads to scan through and compact the heap
 
 What is JIT stands for?
-A.
+A. just in time
 
 Explain Java Heap space and Garbage collection?
-A.
+A. During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
+Note that the JVM uses more memory than just the heap.
 
 Can you guarantee the garbage collection process?
-A.
+A. System.gc() and Runtime.gc() are hooks to request the JVM to initiate the garbage collection process.
+It can choose to reject the request and so it is not guaranteed that these calls will do the garbage collection. 
 
 What is the difference between stack and heap in Java?
-A.
+A. stack memory is used to store local variables and function call while heap memory is used to store objects in Java.
 
 What is reflection in java and why is it useful?
-A.
+A. Reflection is commonly used by programs which require the ability to examine or modify 
+the runtime behavior of applications running in the Java virtual machine. 
 
 what is multithreading in java?
-A.
+A. Multithreading in java is a process of executing multiple threads simultaneously.
 
 What is the use of synchronization in Java?
-A.
+A. Synchronized keyword in Java is used to provide mutually exclusive access to a shared resource with multiple threads in Java.
+Guarentees no two threads can execute a synchronized method which requires the same lock simultaneously or concurrently.
 
 What is Framework?
-A.
+A. frameworks are web-based software libraries that provide the user interface, or "view-layer", of Java web applications.
 
 What are the testing Framework available in java?
-A.
+A. JUnit, REST assured, Selenium, TestNG, Mockito, cucumber, spock framework, spring test
 
 Difference between jUnit and testNG?
-A.
+A. scope, testNG can do more; TestNG is more advance in parameterize testing, dependency testing and suite testing (Grouping concept).
 
 What are the dependencies for this project?
-A.
+A. 
 
 what is dependency injection in java?
-A.
+A. The general concept behind dependency injection is called Inversion of Control.
+A Java class has a dependency on another class, if it uses an instance of this class.
 
 What is static binding and dynamic binding?
-A.
+A. Actual object is used for binding. It is also called early binding because binding happens during compilation.
+It is also called late binding because binding happens at run time. 
+Method overloading is the best example of static binding. Method overriding is the best example of dynamic binding.
 
 
 
