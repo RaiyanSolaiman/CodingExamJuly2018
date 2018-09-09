@@ -49,25 +49,42 @@ from interface, (only one abstract) any variables declared are static final by d
 An Abstract class is a class that can contain abstract methods or concrete methods( methods those have body) or both.
 
 what is Access Specifier?
-A. 
+A. The Java access modifiers private and protected cannot be assigned to a class. Only to constructors, methods 
+and fields inside classes. Classes can only have the default (package) and public access modifier assigned to them.
 
 What is OOP ? Define each feature of java OOP.
 A. Object oriented programming. 
+-Abstraction: hiding the internal details and describing things in simple terms. 
+-Encapsulation: implement abstraction in object oriented programming, used for access restriction to a class members and methods. 
+uses "private", "protected", "public" keywords.
+-Polymorphism:concept where an object behaves differently in different situations. 
+There are two types of polymorphism – compile time polymorphism and runtime polymorphism.
+-Inheritance: concept where an object is based on another object. Inheritance is the mechanism of code reuse. 
+The object that is getting inherited is called superclass and the object that inherits the superclass is called subclass.
+-Association:defines relationship between objects. defines multiplicity between objects.
+-Aggregation: special type of association. In aggregation, objects have their own life cycle but there is an ownership.
+-Composition: special case of aggregation. Composition is a more restrictive form of aggregation.
 
 What is Java Package and which package is imported by default?
-A.
+A. A Java package organizes Java classes into namespaces, providing a unique namespace for each type it contains. 
+Classes in the same package can access each other's package-private and protected members.  
+java.lang package is imported by default, no need to explicitly import it. 
 
 What is API? Name list of API that you have used so far.
-A.
+A. An application program interface (API) is a set of routines, protocols, and tools for building software applications.
+used java, C++, SDK, ALM
 
 Does java support multiple inheritance, explain why or why not?
-A.
+A. can never occur because there is no multiple inheritance. happens because dynamic loading of classes makes implementing multiple 
+classes unreasonable.
 
 What is method overloading and when it happens?
-A.
+A. Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists 
+are different. happens when number, data type, and sequence of data type parameters are changed but the rest of the code is the same.
 
 Explain exceptions in java and how to handle it.
-A.
+A. An exception (or exceptional event) is a problem that arises during the execution of a program. Use Try-catch-finially OR the 
+try-with-resource approach to handle exceptions.
 
 What is static keyword in java? How it has been used in variables and methods ?
 A.
