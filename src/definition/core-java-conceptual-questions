@@ -33,22 +33,26 @@ A. This is neccesary because main() is called by the JVM before any objects are 
 Since it is static it can be directly invoked via the class.
 
 Which class is the superclass of all classes?
-A.
+A. java.lang.object
 
 What is difference between path and classpath variables?
-A.
+A. Path is an environment variable which is used by the operating system to find the executables.
+Classpath is an environment variable which is used by the Java compiler to find the path of classes.
 
 What is the difference between an Interface and Abstract class?
-A.
+A. Java interface methods are implicitly abstract and cannot have implementations. 
+A Java abstract class can have instance methods that implements a default behavior.
 
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
-A.
+A. No, not directly.
+from interface, (only one abstract) any variables declared are static final by default and should be initialized.
+An Abstract class is a class that can contain abstract methods or concrete methods( methods those have body) or both.
 
 what is Access Specifier?
-A.
+A. 
 
 What is OOP ? Define each feature of java OOP.
-A.
+A. Object oriented programming. 
 
 What is Java Package and which package is imported by default?
 A.
