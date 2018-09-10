@@ -25,37 +25,38 @@ public class DataReader
 
 		 */
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+
 
 		InputStream istream;
 		OutputStream ostream;
 		int c;
 		final int EOF = -1;
 		ostream = System.out;
-		try 
+		System.getProperty("user.dir");
+		try
 		{
 			File inputFile = new File ("/src/data/self-driving-car.txt");
 			istream = new FileInputStream(inputFile);
-			try 
+			try
 			{
 				while ((c = istream.read()) != EOF)
 					ostream.write(c);
-			} catch (IOException e) 
+			} catch (IOException e)
 			{
 				System.out.println("Error: " + e.getMessage());
-			} 
-			finally 
+			}
+			finally
 			{
-				try 
+				try
 				{
 					istream.close();
 					ostream.close();
-				} catch (IOException e) 
+				} catch (IOException e)
 				{
 					System.out.println("File did not close");
 				}
 			}
-		} 
+		}
 		catch (FileNotFoundException e)
 		{
 			e.printStackTrace();
