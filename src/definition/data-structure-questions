@@ -1,37 +1,121 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-What are the various operations that can be performed on different Data Structures?
-List out the areas in which data structures are applied extensively?
-what is an Array?
-what is the difference between the Array and ArrayList?
-what is LinkedList?
-How is an Array different from Linked List?
-what is queue?
-what is stack?
-what is FIFO and LIFO?
-what is the order of complexity?
-what is the best case to search an element from an array?
-what is the worst case to search an element from an array?
-what is tree in data structure?
-what is graph in data structure?
-what is the difference between the HashTable and HashMap?
-What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
-How HashMap works in java?
-What is ArrayIndexOutOfBoundsException in java? When it occurs?
-What are the different ways of copying an array into another array?
-What is difference between an array and a linked list?
-What is DFS and BFS?
-What is Recursion?
-What are linear and non linear data Structures?
-What is Big-(O)-notation?
-Outlined different kind of sorting algorithm with time complexity?
+A. so that the data stored can be modified and accessed efficiently.
 
+What are the various operations that can be performed on different Data Structures?
+A. Access, Search, Insertion, Deletion, Access, Search, Insertion, Deletion
+
+List out the areas in which data structures are applied extensively?
+A. Compiler design, OS, DB management, Stat analysis package, numerical analysis, graphics, AI, and simulation
+
+what is an Array?
+A. Array is a data structure consisting of a collection of elements, each identified by at least one array index or key.
+
+what is the difference between the Array and ArrayList?
+A. Array is a fixed length data structure while ArrayList is a variable length Collection class
+what is LinkedList?
+A. data structure where elements are not stored in contiguous locations and 
+every element is a separate object with a data part and address part. 
+
+How is an Array different from Linked List?
+A. array is a fixed length data structure, meaning location is set and important.
+Linked list is where elements are not stored in contiguous locations and every element
+is a separate object with a data part and address part. 
+
+what is queue?
+A. ordered list of objects like List, but is instead designed to have elements inserted at the end of the queue,
+and elements removed from the beginning of the queue instead of vice-versa.
+
+what is stack?
+A. a stack serves as a collection of elements with two principal operations: push, which adds an element to the collection,
+and pop, which removes the most recently added element that was not yet removed. 
+
+what is FIFO and LIFO?
+A. FIFO (first in, first out) is a method for organizing and manipulating a data buffer, where the oldest 
+(first) entry, or 'head' of the queue, is processed first.
+LIFO, last-in-first-out is where the youngest entry or 'top of the stack' is processed first.
+what is the order of complexity?
+
+what is the best case to search an element from an array?
+A. Array access Θ(1)
+
+what is the worst case to search an element from an array?
+A. Array access O(n)
+
+what is tree in data structure?
+A. A tree is a data structure made up of nodes or vertices and edges without having any cycle. A tree that is not empty 
+consists of a root node and potentially many levels of additional nodes that form a hierarchy.
+
+what is graph in data structure?
+A. A set of items connected by edges. Each item is called a vertex or node.
+
+what is the difference between the HashTable and HashMap?
+A.  Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, 
+as unsynchronized Objects typically perform better than synchronized ones.
+
+What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. RDBMS - Array (of structures), Network data model - Graph, Hierachical data model - Trees
+
+How HashMap works in java?
+A. Hash functions used to link key and value in HashMap, stored by 'put(key,value)' command and retrived by 'get(key)'.
+When we call put method, hashcode() method of the key object is called so that hash function of the map can find a bucket 
+location to store value object, which is actually an index of the internal array, known as the table. 
+
+What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. All array accesses are checked at run time; an attempt to use an index that is less than zero or greater than or equal
+to the length of the array causes an ArrayIndexOutOfBoundsException to be thrown.
+
+What are the different ways of copying an array into another array?
+A. Manually. In this method we manually copy elements one by one.
+-Arrays.copyOf() We can directly copy one array to another by using Arrays.copyOf() method.
+-System.arraycopy() It is another method that directly copies one array to another.
+-Object.clone()
+
+What is difference between an array and a linked list?
+A. array is a fixed length data structure, meaning location is set and important.
+Linked list is where elements are not stored in contiguous locations and every element
+is a separate object with a data part and address part. 
+
+What is DFS and BFS?
+A. The breadth first search (BFS) and the depth first search (DFS) are the two algorithms
+used for traversing and searching a node in a graph.
+
+What is Recursion?
+A. A method of solving a problem where the solution depends on solutions to smaller instances of the same problem.
+
+What are linear and non linear data Structures?
+A. linear: Arrays, Stack, Queue, and Linked List; can be traversed in a single run.
+Non-Linear: Graphs and Trees; All the data elements in non linear data structure can not be traversed in single run.
+
+What is Big-(O)-notation?
+A. Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends
+towards a particular value or infinity.
+
+Outlined different kind of sorting algorithm with time complexity?
+A. 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
 
+                                              Common Data Structure Operations
+Data Structure	|                            Time Complexity	                                                       | Space Complexity
+                    Average	                                         Worst	                                           Worst
+                   Access	     Search 	Insertion	Deletion                 Access	Search	Insertion	Deletion	
+Array	               Θ(1)	      Θ(n)	      Θ(n)	    Θ(n)	                  O(1)	 O(n)	     O(n)	    O(n)	                O(n)
+Stack	               Θ(n)       Θ(n)	      Θ(1)	    Θ(1)	                  O(n)	 O(n)	     O(1)	    O(1)	                O(n)
+Queue	               Θ(n)	      Θ(n)	      Θ(1)	    Θ(1)	                  O(n)	 O(n)	     O(1)	    O(1)	                O(n)
+Singly-Linked List	 Θ(n)	      Θ(n)	      Θ(1)	    Θ(1)	                  O(n)	 O(n)	     O(1)	    O(1)	                O(n)
+Doubly-Linked List	 Θ(n)	      Θ(n)	      Θ(1)	    Θ(1)	                  O(n)	 O(n)	     O(1)	    O(1)	                O(n)
+Skip List	           Θ(log(n))	Θ(log(n))	 Θ(log(n))	Θ(log(n))	              O(n)	 O(n)	     O(n)	    O(n)	         O(n log(n))
+Hash Table	         N/A	      Θ(1)	     Θ(1)	      Θ(1)	                  N/A	   O(n)	     O(n)	    O(n)	         O(n)
+Binary Search Tree	 Θ(log(n))	Θ(log(n))	 Θ(log(n))	Θ(log(n))	              O(n)	 O(n)	     O(n)	    O(n)	         O(n)
+Cartesian Tree	     N/A        Θ(log(n))	 Θ(log(n))  Θ(log(n))	              N/A	   O(n)	     O(n)	    O(n)	         O(n)
+B-Tree	             Θ(log(n))	Θ(log(n))	 Θ(log(n))	Θ(log(n))	           O(log(n)) O(log(n)) O(log(n)) O(log(n))	   O(n)
+Red-Black Tree	     Θ(log(n))	Θ(log(n))	 Θ(log(n))	Θ(log(n))	           O(log(n)) O(log(n)) O(log(n)) O(log(n))	   O(n)
+Splay Tree	         N/A	      Θ(log(n))	 Θ(log(n))	Θ(log(n))	              N/A    O(log(n)) O(log(n)) O(log(n))	   O(n)
+AVL Tree	           Θ(log(n))  Θ(log(n))	 Θ(log(n))	Θ(log(n))	           O(log(n)) O(log(n)) O(log(n)) O(log(n))	   O(n)
+KD Tree	             Θ(log(n))	Θ(log(n))	 Θ(log(n))	Θ(log(n))	               O(n)  O(n)	     O(n)	     O(n)          O(n)
 
