@@ -1,11 +1,19 @@
 package datastructure;
+import databases.ConnectToMongoDB;
+
 import java.io.*;
+
+import static java.lang.System.getProperty;
 
 public class DataReader
 {
 
+	private static Object ConnectToMongoDB;
+
 	public static void main(String[] args)
 	{
+
+
 		/*
 		 * User API to read the below textFile and print to console.
 		 * Use BufferedReader class. 
@@ -24,9 +32,7 @@ public class DataReader
 		/*String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
 		 */
-
-
-
+		String textfile = databases.ConnectToMongoDB;
 		InputStream istream;
 		OutputStream ostream;
 		int c;
